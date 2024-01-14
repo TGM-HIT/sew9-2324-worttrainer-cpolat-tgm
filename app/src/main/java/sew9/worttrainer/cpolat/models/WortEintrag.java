@@ -24,7 +24,7 @@ public class WortEintrag implements Serializable {
     /**
      * Konstruktor
      * 
-     * @param wort das Word
+     * @param wort das Wort
      * @param url  die URL
      */
     public WortEintrag(String wort, String url) {
@@ -32,7 +32,7 @@ public class WortEintrag implements Serializable {
         this.url = url;
 
         if (wort == null || url == null) {
-            throw new IllegalArgumentException("The word or the url must not be null");
+            throw new IllegalArgumentException("Die Werte dürfen nicht null sein");
         }
 
         validateUrl();
@@ -46,7 +46,7 @@ public class WortEintrag implements Serializable {
      */
     public boolean validateUrl() {
         if (!url.matches("^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]"))
-            throw new IllegalArgumentException("The url is not valid");
+            throw new IllegalArgumentException("Die URL ist nicht gültig");
         else
             return true;
 
@@ -54,7 +54,7 @@ public class WortEintrag implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("WordEntry[word=%s, url=%s]", wort, url);
+        return String.format("WortEintrag[wort=%s, url=%s]", wort, url);
     }
 
     public String getUrl() {
@@ -69,7 +69,7 @@ public class WortEintrag implements Serializable {
         this.url = url;
     }
 
-    public void setWort(String word) {
-        this.wort = word;
+    public void setWort(String wort) {
+        this.wort = wort;
     }
 }
