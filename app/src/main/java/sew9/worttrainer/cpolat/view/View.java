@@ -9,6 +9,7 @@ import java.net.URL;
 
 /**
  * Die UI für die App.
+ * 
  * @author Can Polat
  * 
  * @version 2024-01-14
