@@ -88,7 +88,7 @@ public class Controller {
     }
 
     private void laden() {
-        File f = new File("Einträge.wts");
+        File f = new File("Eintraege.wts");
 
         if (f.exists()) {
             try {
@@ -107,7 +107,7 @@ public class Controller {
 
     private void speichern() {
         try {
-            new Json().serialize(trainer, "Einträge.wts");
+            new Json().serialize(trainer, "Eintraege.wts");
             view.setFeedback("Erfolgreich gespeichert!");
         } catch (Exception e) {
             view.setFeedback("Speichern fehlgeschlagen!");
