@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sew9.worttrainer.cpolat.models.TrainerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-01-15T07:40:44" hostname="HP" time="0.035">
+  <properties/>
+  <testcase name="nullTest()" classname="sew9.worttrainer.cpolat.models.TrainerTest" time="0.002"/>
+  <testcase name="falscherCheck()" classname="sew9.worttrainer.cpolat.models.TrainerTest" time="0.004"/>
+  <testcase name="richtigerCheck()" classname="sew9.worttrainer.cpolat.models.TrainerTest" time="0.004"/>
+  <testcase name="rmvEintragTest()" classname="sew9.worttrainer.cpolat.models.TrainerTest" time="0.002"/>
+  <testcase name="addEintragTest()" classname="sew9.worttrainer.cpolat.models.TrainerTest" time="0.004"/>
+  <testcase name="ohneEintragChecken()" classname="sew9.worttrainer.cpolat.models.TrainerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -13,12 +13,12 @@ public class EintragTest {
     }
 
     @Test
-    public void keineGültigeURL() {
+    public void keineGueltigeURL() {
         assertThrows(IllegalArgumentException.class, () -> new WortEintrag("wort", "asdsadsad"));
     }
 
     @Test
-    public void gültigeURL() {
+    public void gueltigeURL() {
         WortEintrag entry = new WortEintrag("word", "https://elearning.tgm.ac.at/");
         assertTrue(entry.validateUrl());
     }
@@ -27,6 +27,6 @@ public class EintragTest {
     public void setURLTest() {
         WortEintrag entry = new WortEintrag();
         entry.setUrl("asdasdasd");
-        assertFalse(entry.validateUrl());
+        assertThrows(IllegalArgumentException.class, () -> entry.validateUrl());
     }
 }
